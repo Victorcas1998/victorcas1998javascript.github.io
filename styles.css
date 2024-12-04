@@ -1,0 +1,156 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2f2f2f; /* Fondo gris oscuro */
+    color: #fff; /* Texto blanco */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Contenedor de los botones de categoría */
+div {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Botón base */
+button {
+    color: #fff; /* Texto blanco */
+    border: none;
+    padding: 12px 25px;
+    margin: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+/* Botones de categoría con colores específicos */
+#boton-accion {
+    background-color: #d32f2f; /* Rojo brillante para Acción */
+}
+
+#boton-terror {
+    background-color: #424242; /* Gris oscuro para Terror */
+}
+
+#boton-comedia {
+    background-color: #fbc02d; /* Amarillo brillante para Comedia */
+}
+
+#boton-todas {
+    background-color: #1976d2; /* Azul brillante para "Todas las películas" */
+}
+
+/* Efecto hover para los botones */
+button:hover {
+    transform: scale(1.1); /* Agranda el botón al pasar el ratón */
+    opacity: 0.9; /* Cambia la opacidad para darle un efecto de interacción */
+}
+
+/* Contenedor de las películas */
+#lista_peliculas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Estilo para las tarjetas de películas */
+.pelicula {
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.pelicula:hover {
+    transform: scale(1.05); /* Efecto hover para las tarjetas */
+}
+
+/* Imagen de la película */
+.pelicula img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+/* Títulos y textos dentro de la tarjeta */
+.pelicula h6 {
+    font-size: 1.3rem;
+    color: #ff6347; /* Color tomate para los títulos de las películas */
+    margin: 10px 0;
+}
+
+.pelicula p {
+    color: #ccc; /* Color gris claro para la descripción */
+}
+
+.pelicula ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.pelicula li {
+    margin-bottom: 5px;
+}
+
+/* Filtro de películas por categorías */
+.accion, .terror, .comedia {
+    display: block;
+}
+
+.accion.hidden,
+.terror.hidden,
+.comedia.hidden,
+.suspense.hidden {
+    display: none;
+}
+
+/* Estilos para el footer (opcional) */
+footer {
+    background-color: #1c1c1c; /* Gris más oscuro */
+    color: #ccc;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+#botones{
+    position: fixed;  /* Fija el div en una posición específica */
+    background-color: grey;
+    box-shadow: black;
+    margin: auto;
+
+
+}
+#genero {
+    border: 2px solid rgb(0, 255, 0);  /* Borde azul de 2px */
+    color: rgb(255, 98, 0);              /* Texto en color rojo */
+    font-size: 18px;         /* Tamaño de letra */
+    padding: 6px;            /* Espaciado interno */
+    background-color: #f9f9f9;  /* Color de fondo claro */
+    border-radius: 4px;      /* Bordes redondeados */
+    font-family: Arial, sans-serif; /* Fuente de la letra */
+    font-weight: bold;
+  }
+  
+  #genero:focus {
+    outline: none;  /* Elimina el contorno por defecto cuando se hace clic */
+    border-color: rgb(0, 255, 0); /* Cambia el borde a azul oscuro al enfocar */
+  }
